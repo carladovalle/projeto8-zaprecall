@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+.corpoTela1 {
+    width: 375px;
+    height: 667px;
+    background-color: #FB6B6B;
+}
+.logo {
+    width: 136px;
+    height: 161px;
+    margin-top: 148px;
+    margin-left: 119px;
+    margin-bottom: 13px;
+}
+span {
+    width: 257px;
+    height: 59px;
+    color: #FFFFFF;
+    font-size: 36px;
+    margin-left: 89px;
+    margin-top: 13px;
+    font-family: 'Righteous', cursive;
+}
+button {
+    width: 246px;
+    height: 54px;
+    background: #FFFFFF;
+    color: #D70900;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 64px;
+    font-family: 'Recursive', sans-serif;
+    cursor: pointer;
+}
+.corpoTela2 {
+    width: 375px;
+    height: 667px;
+    background-color: #FB6B6B;
+    overflow-y: scroll;
+}
+.logoPequena {
+    width: 52px;
+    height: 60px;
+    margin-top: 42px;
+    margin-left: 59px;
+}
+h1 {
+    width: 203.17px;
+    height: 44px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-family: 'Righteous', cursive;
+    margin-top: -48px;
+    margin-left: 121px;
+}
+.perguntas {
+    margin-top: 51px;
+    margin-left: 37px;
+    margin-bottom: 109px;
+}
+.pergunta {
+    width: 300px;
+    height: 65px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+h2 {
+    color: #333333;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 15px;
+}
+.play {
+    color: #333333;
+    width: 20px;
+    height: 23px;
+    font-weight:25px;
+}
+.rodape {
+    width: 375px;
+    height: 70px;
+    background: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Recursive', sans-serif;
+}

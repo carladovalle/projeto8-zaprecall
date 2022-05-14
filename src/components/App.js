@@ -1,3 +1,4 @@
+import React from "react";
 import Init from "./Init";
 import Content from "./Content";
 
