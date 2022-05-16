@@ -34,12 +34,45 @@ function FlashCard(props) {
             <>
                 <div className="perguntaAberta">
                     <p>{answer}</p>
-                    <button class="nãoLembrei"><h5>Não lembrei</h5></button>
-                    <button class="quaseNãoLembrei"><h5>Quase não lembrei</h5></button>
-                    <button class="zap"><h5>Zap!</h5></button>
+                    <button class="nãoLembrei" onClick={() => {setState("naoLembrei")}}><h5>Não lembrei</h5></button>
+                    <button class="quaseNãoLembrei" onClick={() => {setState("quaseNaoLembrei")}}><h5>Quase não lembrei</h5></button>
+                    <button class="zap" onClick={() => {setState("zap")}}><h5>Zap!</h5></button>
                 </div>
             </>
 
+        )
+    }
+
+    if (state === "naoLembrei") {
+        return (
+                <div className="pergunta">
+                    <div className="riscoVermelho">
+                    <h6>{name}</h6>
+                </div>
+                    <ion-icon name="close-circle"></ion-icon>
+                </div>
+        )
+    }
+
+    if (state === "quaseNaoLembrei") {
+        return (
+            <div className="pergunta">
+                <div className="riscoLaranja">
+                    <h7>{name}</h7>
+                </div>
+                <ion-icon name="help-circle"></ion-icon>
+            </div>
+        )
+    }
+
+    if (state === "zap") {
+        return (
+            <div className="pergunta">
+                <div className="riscoVerde">
+                    <h8>{name}</h8>
+                </div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
         )
     }
 

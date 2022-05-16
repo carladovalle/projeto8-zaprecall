@@ -154,3 +154,42 @@ h5 {
     font-family: 'Recursive', sans-serif;
     color: #FFFFFF;
 }
+.riscoVermelho {
+    text-decoration-line: line-through;
+    color: #FF3030;
+}
+h6 {
+    color: #FF3030;
+    font-size: 18px;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 15px;
+}
+h7 {
+    color: #FF922E;
+    font-size: 18px;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 15px;
+}
+h8 {
+    color: #2FBE34;
+    font-size: 18px;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 15px;
+}
+.riscoLaranja {
+    text-decoration-line: line-through;
+    color: #FF922E;
+}
+.riscoVerde {
+    text-decoration-line: line-through;
+    color: #2FBE34;
+}
+ion-icon[name="close-circle"] {
+    color: #FF3030;
+}
+ion-icon[name="help-circle"] {
+    color: #FF922E;
+}
+ion-icon[name="checkmark-circle"] {
+    color: #2FBE34;
+}
