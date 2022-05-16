@@ -72,6 +72,9 @@ h1 {
     margin-bottom: 25px;
     cursor: pointer;
 }
+.pergunta:last-child {
+    margin-bottom: 179px;
+}
 h2 {
     color: #333333;
     font-family: 'Recursive', sans-serif;
@@ -99,4 +102,55 @@ h3 {
     color: #333333;
     font-size: 18px;
     font-family: 'Recursive', sans-serif;
+}
+.perguntaAberta {
+    width: 299px;
+    height: 131px;
+    background: #FFFFD4;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    margin-top: 0;
+    padding: 5px;
+}
+.perguntaAberta:last-child {
+    margin-bottom: 179px;
+}
+p {
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 15px;
+}
+.setinha {
+    width: 30px;
+    height: 20px;
+    margin-left: 254px;
+    margin-top: 67px;
+    cursor: pointer;
+}
+.nãoLembrei{
+    background-color: #FF3030;
+    width: 85.17px;
+    height: 37.17px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.quaseNãoLembrei {
+    background-color: #FF922E;
+    width: 85.17px;
+    height: 37.17px;
+    margin-left: 7.74px;
+    margin-top: 10px;
+}
+.zap {
+    background-color: #2FBE34;
+    width: 85.17px;
+    height: 37.17px;
+    margin-left: 7.74px;
+    margin-top: 10px;
+}
+h5 {
+    font-size: 12px;
+    font-family: 'Recursive', sans-serif;
+    color: #FFFFFF;
 }
