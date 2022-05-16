@@ -1,8 +1,10 @@
 import { useState } from "react";
 
-function FlashCard(props) {
+export default function FlashCard(props) {
 
     const {
+        count,
+        setCount,
         name,
         question,
         answer,
@@ -10,7 +12,6 @@ function FlashCard(props) {
     
     const [state, setState] = useState("openQuestion");
 
-    
     if (state === "openQuestion") {
         return (
             <div className="pergunta" onClick={() => {setState("question")}}>
@@ -28,13 +29,18 @@ function FlashCard(props) {
           </div>
         );
       }
+
+    function nao () {
+        setCount(count + 1);
+    }
+    
     
     if (state === "answer") {
         return (
             <>
                 <div className="perguntaAberta">
                     <p>{answer}</p>
-                    <button class="nãoLembrei" onClick={() => {setState("naoLembrei")}}><h5>Não lembrei</h5></button>
+                    <button class="nãoLembrei" onClick={nao}><h5>Não lembrei</h5></button>
                     <button class="quaseNãoLembrei" onClick={() => {setState("quaseNaoLembrei")}}><h5>Quase não lembrei</h5></button>
                     <button class="zap" onClick={() => {setState("zap")}}><h5>Zap!</h5></button>
                 </div>
@@ -77,5 +83,3 @@ function FlashCard(props) {
     }
 
 }
-
-export default FlashCard;

@@ -1,5 +1,7 @@
 import React from "react";
+import { useState } from "react/cjs/react.production.min";
 import FlashCard from "./FlashCard";
+import Footer from "./Footer";
 
 const deck = {
     exemplo: [
@@ -86,18 +88,24 @@ export default function Questions () {
         return Math.random() - 0.5;
     }
 
-    let objetc = {...deck}
+    let object = {...deck}
 
-        objetc.exemplo.sort(comparador);
-        objetc.exemplo.forEach((question,index) => {
+        object.exemplo.sort(comparador);
+        object.exemplo.forEach((question,index) => {
         flascards[index].question = question.question;
         flascards[index].answer = question.answer;
     })
 
+    const [count, setCount] = useState(0);
+
     return (
-        <div className="perguntas">
-                {flascards.map((item,index) => <FlashCard key={index} name={item.name} question={item.question} answer={item.answer} />)}
-                
-        </div>
+        <>
+            <div className="perguntas">
+                {flascards.map((item,index) => <FlashCard key={index} name={item.name} question={item.question} 
+                answer={item.answer}/>)}    
+            </div>
+            <Footer count={count} setCount={setCount} />
+        </>
+
     )
 }
