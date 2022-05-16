@@ -31,7 +31,9 @@ export default function FlashCard(props) {
       }
 
     function nao () {
-        setCount(count + 1);
+        let aux = count + 1;
+        setCount(aux);
+        setState("naoLembrei");
     }
     
     
