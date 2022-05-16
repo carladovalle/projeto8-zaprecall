@@ -42,7 +42,7 @@ export default function FlashCard(props) {
             <>
                 <div className="perguntaAberta">
                     <p>{answer}</p>
-                    <button className="nãoLembrei" onClick={() => setCount((count)=>{return count +1})}><h5>Não lembrei</h5></button>
+                    <button className="nãoLembrei" onClick={() => {setState("naoLembrei")}}><h5>Não lembrei</h5></button>
                     <button className="quaseNãoLembrei" onClick={() => {setState("quaseNaoLembrei")}}><h5>Quase não lembrei</h5></button>
                     <button className="zap" onClick={() => {setState("zap")}}><h5>Zap!</h5></button>
                 </div>
